@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Maaz Gym</title>
+</head>
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/builder.jpg');
+        background-repeat: no-repeat;
+        height: 1187px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+    .left img {
+        height: 71px;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        position: absolute;
+        position: fixed;
+        right: 23px;
+        top: 32px;
+        /* border: 2px solid pink; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 0px 10px;
+    }
+
+    /* .navbar li a:hover, */
+    .navbar li a.active {
+        text-decoration:underline;
+        color: pink;
+        transition: 1s;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 10px;
+    }
+
+
+    .btn {
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid green;
+        margin: 72px 40px;
+        padding: 49px;
+        width: 33%;
+        border-radius: 20px;
+        border-color: white;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 16px;
+        margin: 10px auto;
+        font-size: 12px;
+        font-family: 'Baloo Bhai', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo.png" width="120px" height="200px" alt="">
+            <div>Maaz Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gym Fitness</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join The Best Gym In Pernambut</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Locality">
+                </div>
+                <button class="btn">Submit</button>
+            </form> 
+        </div>
+    </header>
+</body>
+
+</html>
